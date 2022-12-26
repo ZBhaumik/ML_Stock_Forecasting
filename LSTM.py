@@ -14,5 +14,4 @@ def LSTM_model_regularization(X_train, y_train, X_test, sc):
     return my_LSTM_model, LSTM_prediction
 
 my_LSTM_model, LSTM_prediction = LSTM_model_regularization(X_train, y_train, X_test, sc)
-LSTM_prediction[1:10]
 actual_pred_plot(LSTM_prediction)

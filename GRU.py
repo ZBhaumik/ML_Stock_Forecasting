@@ -12,6 +12,6 @@ def GRU_model(X_train, y_train, X_test, sc):
     GRU_prediction = sc.inverse_transform(GRU_prediction)
     return my_GRU_model, GRU_prediction
 
+X_train, y_train, X_test, sc = ts_train_test_normalize(all_data,5,1)
 my_GRU_model, GRU_prediction = GRU_model(X_train, y_train, X_test, sc)
-GRU_prediction[1:10]
 actual_pred_plot(GRU_prediction) 
