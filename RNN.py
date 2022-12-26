@@ -14,5 +14,5 @@ def simple_rnn_model(X_train, y_train, X_test, sc):
     return my_rnn_model, rnn_predictions
 
 X_train, y_train, X_test, sc = ts_train_test_normalize(all_data,5,2)
-my_rnn_model, rnn_predictions_2 = simple_rnn_model(X_train, y_train, X_test, sc)
-actual_pred_plot(rnn_predictions_2)
+my_rnn_model, rnn_predictions = simple_rnn_model(X_train, y_train, X_test, sc)
+actual_pred_plot(rnn_predictions)
